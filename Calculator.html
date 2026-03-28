@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head> 
+ 
+    <style>
+        #Calaculator{
+            height: 400px;
+            width:300px;
+            border:2px solid black;
+            border-radius:5px;
+            margin-left: 40%;
+            background-color: cadetblue;
+            
+        
+        }
+      
+        button{
+            border:none;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            margin-left:5px;
+           height: 50px;
+            width:50px;
+            background-color: grey;
+            border-radius: 20px;
+            
+        }
+        button:hover{
+            color:black;
+            background-color: white;
+            
+        }
+        #display{
+            
+             width:285px;
+            margin-top: 5px;
+        }
+    </style>
+    
+    
+    </head>
+<body>
+    
+    <div id="Calaculator">
+    
+    <input type="text" placeholder="Enter The value..." id="display">
+        
+    <button id="ac" onclick="ac()">ac</button>
+     <button onclick="one()">1</button>
+     <button onclick="two()">2</button>
+     <button onclick="three()">3</button>
+    
+    <button onclick="Four()">4</button>
+        <button onclick="Five()">5</button>
+     <button onclick="Six()">6</button>
+     <button onclick="seven()">7</button>
+    
+    <button onclick="Eight()">8</button>
+        <button onclick="Nine()">9</button>
+     <button onclick="Zero()">0</button>
+     <button onclick="Add()">+</button>
+                                                            
+    <button onclick="Subtract()">-</button>
+        <button onclick="Multiply()">*</button>
+     <button onclick="Divide()">/</button>
+         <button onclick="Equal()">=</button>
+           <button onclick="backspace()">X</button>
+    
+   
+    </div>
+    <script>
+        
+    function ac(){
+        document.getElementById("display").value ="";  
+    }
+         function one(){
+        document.getElementById("display").value +="1";  
+    } 
+        function two(){
+        document.getElementById("display").value +="2";  
+    } 
+        function three(){
+        document.getElementById("display").value +="3";  
+    } 
+        function Four(){
+        document.getElementById("display").value +="4";  
+    } 
+        function Five(){
+        document.getElementById("display").value +="5";  
+    } 
+        function Six(){
+        document.getElementById("display").value +="6";  
+    } 
+        function seven(){
+        document.getElementById("display").value +="7";  
+    }
+        function Eight(){
+        document.getElementById("display").value +="8";  
+    }
+        function Nine(){
+        document.getElementById("display").value +="9";  
+    } 
+        function Zero(){
+        document.getElementById("display").value +="0";  
+    } 
+        function Add(){
+        document.getElementById("display").value +="+";  
+    }
+        function Subtract(){
+        document.getElementById("display").value +="-";  
+    }
+    
+          function Multiply(){
+        document.getElementById("display").value +="*";  
+    }
+        function Divide(){
+        document.getElementById("display").value +="/";  
+    }
+        function Equal(){
+        document.getElementById("display").value +="=";  
+    }
+     
+      
+    function Equal(){
+        let a=document.getElementById("display").value;
+        document.getElementById("display").value=eval(a);
+    }
+     
+       function backspace() {
+    if (display.value.length > 0) {
+        display.value = display.value.slice(0, -1);
+    }
+}
+      
+    </script>
+    
+    </body>
+</html>
